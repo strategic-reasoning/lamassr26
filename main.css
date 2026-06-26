@@ -264,114 +264,91 @@ tr:nth-child(even) {
   margin-top: -7rem; /* negative of that height */
 }
 
-
-
-
-/* ==========================
+/* =======================
    PROGRAM
-========================== */
+======================= */
 
 #program {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
-.program-day {
-    text-align: center;
-    margin-bottom: 2.5rem;
+.program-item{
+    display:flex;
+    gap:2rem;
+    margin-bottom:1.75rem;
+    align-items:flex-start;
 }
 
-.program-day h4 {
-    color: #245f77;
-    font-family: "League Spartan", sans-serif;
-    margin-bottom: .4rem;
+.program-time{
+    width:115px;
+    flex-shrink:0;
+    font-family:"League Spartan",sans-serif;
+    font-weight:700;
+    color:#245f77;
+    font-size:1.05rem;
+    text-align:right;
+    padding-top:.2rem;
 }
 
-.program-day p {
-    color: #777;
-    font-style: italic;
+.program-content{
+    flex:1;
+    background:#fff;
+    border-left:4px solid #df8341;
+    padding:1rem 1.4rem;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
 }
 
-.program-item {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1.6rem;
-    align-items: flex-start;
+.program-content h5{
+    margin:0 0 .5rem;
+    padding:0;
+    color:#df8341;
 }
 
-.program-time {
-    width: 120px;
-    flex-shrink: 0;
-    text-align: right;
-    font-family: "League Spartan", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #245f77;
+.program-content p{
+    margin-bottom:.4rem;
 }
 
-.program-card {
-    flex: 1;
-    background: white;
-    border-left: 5px solid #df8341;
-    border-radius: 8px;
-    padding: 1rem 1.4rem;
-    box-shadow: 0 3px 12px rgba(0,0,0,.05);
-    transition: .2s ease;
+.program-content ul{
+    margin:0;
+    padding-left:1.2rem;
 }
 
-.program-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(0,0,0,.08);
+.program-content li{
+    margin-bottom:.45rem;
 }
 
-.program-title {
-    font-family: "League Spartan", sans-serif;
-    color: #df8341;
-    font-size: 1.15rem;
-    margin-bottom: .5rem;
+.program-keynote .program-content{
+    border-left-color:#245f77;
+    background:#faf6e7;
 }
 
-.program-speaker {
-    color: #245f77;
-    font-weight: 600;
+.program-keynote h5{
+    color:#245f77;
 }
 
-.program-card ul {
-    margin: .7rem 0 0;
-    padding-left: 1.25rem;
+.program-break .program-content{
+    background:transparent;
+    box-shadow:none;
+    border-left:4px solid #245f77;
+    color:#666;
+    font-style:italic;
 }
 
-.program-card li {
-    margin-bottom: .45rem;
-    line-height: 1.45;
+.program-break h5{
+    color:#245f77;
 }
 
-.program-break {
-    background: #faf6e7;
-    border-left-color: #245f77;
-    font-style: italic;
-    color: #666;
+@media(max-width:768px){
+
+.program-item{
+    display:block;
 }
 
-.program-keynote {
-    border-left-color: #245f77;
+.program-time{
+    width:auto;
+    text-align:left;
+    margin-bottom:.5rem;
 }
 
-.program-keynote .program-title {
-    color: #245f77;
 }
-
-@media (max-width:768px){
-
-    .program-item{
-        display:block;
-    }
-
-    .program-time{
-        width:100%;
-        text-align:left;
-        margin-bottom:.6rem;
-    }
-
-}
-

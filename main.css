@@ -264,3 +264,155 @@ tr:nth-child(even) {
   margin-top: -7rem; /* negative of that height */
 }
 
+
+
+.program-section {
+  scroll-margin-top: 6rem;
+}
+
+.program-intro {
+  max-width: 720px;
+  font-size: 1rem;
+  color: #5c655d;
+}
+
+.program-card,
+.theme-card {
+  border: 1px solid rgba(36, 95, 119, 0.14);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.program-table thead th {
+  background: #245f77;
+  color: #faf6e7;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 0.02em;
+  border-color: rgba(255,255,255,0.12);
+}
+
+.program-table tbody td {
+  vertical-align: top;
+  border-color: rgba(223, 131, 65, 0.16);
+}
+
+.program-row:nth-child(even) {
+  background: rgba(250, 246, 231, 0.42);
+}
+
+.program-row.invited {
+  background: rgba(223, 131, 65, 0.08);
+}
+
+.program-break {
+  background: rgba(36, 95, 119, 0.05);
+}
+
+.program-break.lunch {
+  background: rgba(223, 131, 65, 0.08);
+}
+
+.time-pill {
+  display: inline-block;
+  min-width: 100%;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: #245f77;
+  color: #faf6e7;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.time-pill-soft {
+  background: #df8341;
+}
+
+.muted {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.paper-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.paper-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: #faf6e7;
+  border: 1px solid rgba(223, 131, 65, 0.35);
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.theme-card h5 {
+  color: #245f77;
+  padding-top: 0;
+  margin-bottom: 1rem;
+}
+
+.theme-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.theme-list li + li {
+  margin-top: 0.45rem;
+}
+
+@media (max-width: 767.98px) {
+  .program-table thead {
+    display: none;
+  }
+
+  .program-table,
+  .program-table tbody,
+  .program-table tr,
+  .program-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .program-table tr {
+    border-top: 1px solid rgba(223, 131, 65, 0.18);
+  }
+
+  .program-table td {
+    border: 0;
+    padding: 0.85rem 1rem;
+  }
+
+  .program-table td:first-child {
+    padding-top: 1rem;
+  }
+
+  .program-table td:last-child {
+    padding-bottom: 1rem;
+  }
+
+  .program-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #245f77;
+    margin-bottom: 0.35rem;
+  }
+
+  .program-table td:not([data-label])::before {
+    content: "";
+    margin-bottom: 0;
+  }
+
+  .time-pill {
+    min-width: 0;
+    width: auto;
+  }
+}

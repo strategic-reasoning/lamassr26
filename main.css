@@ -351,3 +351,19 @@ tr:nth-child(even) {
 }
 
 }
+
+.paper-authors{
+    display:block;
+    margin-top:2px;
+    color:#6c757d;
+    font-size:.92rem;
+    font-style:italic;
+}
+
+.program-paper-list li{
+    margin-bottom:1rem;
+}
+
+.program-paper-list li:last-child{
+    margin-bottom:0;
+}

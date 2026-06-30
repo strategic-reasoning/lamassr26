@@ -367,3 +367,29 @@ tr:nth-child(even) {
 .program-paper-list li:last-child{
     margin-bottom:0;
 }
+
+.invited-speaker{
+    margin:0.5rem 0 0.2rem;
+    padding:0;
+    color:#245f77;
+    font-family:"League Spartan",sans-serif;
+    font-size:1.45rem;
+    font-weight:700;
+}
+
+.invited-affiliation{
+    margin-bottom:.8rem;
+    color:#888;
+    font-size:.95rem;
+}
+
+.invited-title{
+    margin:0;
+    color:#5c655d;
+    font-size:1.05rem;
+    line-height:1.5;
+}
+
+.invited-title em{
+    font-style:italic;
+}
